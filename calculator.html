@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calaulator</title>
+</head>
+<body>
+  1st value = <input type="text"id="f1"><br><br>
+2nd value = <input type="text"id="f2"><br><br>
+show      =<input type="text" id="f3"><br><br>
+    <input type="button" value="add"   onclick="add()">
+    <input type="button" value="dev"   onclick="dev()">
+    <input type="button" value="multi" onclick="multi()">
+    <input type="button" value="sub"   onclick="sub()">
+        
+    <script>
+       
+function add(){
+          var a=Number(document.getElementById('f1').value);
+          var b=Number(document.getElementById('f2').value);
+          var  c=a+b
+        document.getElementById('f3').value=c
+}
+function dev(){
+         var a=Number(document.getElementById('f1').value);
+         var b=Number(document.getElementById('f2').value);
+         var c=a%b
+         
+        document.getElementById('f3').value=c
+}
+function multi(){
+         var a=Number(document.getElementById('f1').value);
+         var b=Number(document.getElementById('f2').value);
+         var c=a*b
+
+        document.getElementById('f3').value=c
+}
+function sub(){
+         var a=Number(document.getElementById('f1').value);
+         var b=Number(document.getElementById('f2').value);
+         var c=a-b
+        document.getElementById('f3').value=c
+}
+
+    </script>
+    </body>
+</html>
